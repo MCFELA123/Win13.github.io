@@ -18,45 +18,44 @@ background-image: url(bglight.png);
 
 .task {
 width: 70%;
-height: 50px;
+height: 7vmin;
 background: rgba(233, 245, 255, 0.797);
 backdrop-filter: blur(.3em);
 -webkit-backdrop-filter: blur(.3em);
 box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.123);
-border-radius: 8px;
+border-radius: 1vmin;
 position: fixed;
 display: flex;
 align-items: center;
-bottom: 10px;
+bottom: 1.5vmin;
 }
 
 .task nav {
     width: 21%;
-    height: 2em;
+    height: 5vmin;
     float: left;
     display: flex;
     align-items: center;
-    border-left: 1px solid rgb(177, 177, 177);
+    border-left: 1px solid rgba(0, 0, 0, 0.253);
 }
 
 .task nav:first-child .stack {
-  width: 6vmin;
-  
-  border-radius: 10px;
-  margin-left: 10px;
+  width: 10vmin;
+  border-radius: .7vmin;
+  margin-left: 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.094);
-  height: 80%;
+  height: 5vmin;
   background: rgb(255, 255, 255);
 }
 
 .task nav:first-child .search {
   width: 40%;
-  border-radius: 2em;
+  border-radius: 4vmin;
   display: flex;
   align-items: center;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.082);
-  height: 70%;
-  margin-left: 1em;
+  height: 5vmin;
+  margin-left: 1.5vmin;
   background: white;
 }
 
@@ -91,13 +90,13 @@ overflow: auto;
   }
 
   .desktop section:first-child div:first-child {
-padding-right: 2em;
+padding-right: 2vmin;
 height: 60%
   }
 
   .desktop section:first-child div:last-child {
 height: 40%;
-padding-right: 2em
+padding-right: 2vmin
   }
 
   .desktop section:first-child div:first-child text {
@@ -131,32 +130,33 @@ width: 2.7em;
 
 .search svg {
   float: left;
-  width: 1.6em;
-  margin-left: 9px;
+  width: 3vmin;
+  margin-left: 1.2vmin;
   fill: rgb(80, 91, 119);
 }
 
 .search input[type=text] {
-  margin-left: 5px;
+  margin-left: .8vmin;
   height: 1.7em;
   outline: 0;
   color: rgb(87, 87, 87);
-  font-size: 15px;
+  font-size: 2.2vmin;
   width: 65%;
   border: none;
 }
 
 .search div {
   float: right;
-  margin-top: .13vmax;
+  margin-top: .23vmin;
   height: 100%;
+  scale: .7;
   background-image: url(badge.png);
   background-position: center;
   background-size: cover;
   -webkit-user-drag: none;
-  width: 3.5vmax !important;
+  width: 7vmin !important;
   margin-left: 0;
-  border-radius: 0 .9em 16px 0;
+  border-radius: 0 1vmin 2vmin 0;
 }
 
 .task nav:first-child {
@@ -171,18 +171,19 @@ width: 2.7em;
     opacity: 1;
     visibility: visible;
     border-left: unset;
-    border-radius: 9px 0 0 9px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
 }
 
 .task nav:first-child button {
-  margin-left: 3%;
+  margin-left: 2vmin;
   height: 70%;
   transition: all .2s ease;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2vmax;
+  width: 4vmin;
   background: unset;
   border: unset;
 }
@@ -195,7 +196,7 @@ width: 2.7em;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5vmax;
+  width: 4vmin;
   background: unset;
   border: unset;
 }
@@ -232,12 +233,12 @@ background: unset;
 }
 
 .arrow-down {
-scale: .9;
+width: 2vmin !important;
 fill: rgba(0, 0, 0, 0.698);
 }
 
 .arrow {
-  border-radius: 5px;
+  border-radius: .7vmin;
   scale: 1 !important;
   opacity: 1 !important;
 }
@@ -248,14 +249,17 @@ fill: rgba(0, 0, 0, 0.698);
 
 .lang {
   text-align: center;
-  width: 2.7em;
- border-radius: 7px;
-  height: 2.5em;
+  width: 5.5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ border-radius: .7vmin;
+  height: 5.5vmin;
   cursor: pointer;
   color: rgb(0, 0, 0);
   box-shadow: 0 2px 6px -3px rgb(0, 0, 0);
   background: whitesmoke;
-  margin-left: 7%;
+  margin-left: 1.7vmin;
 }
 
 .dark {
@@ -272,11 +276,11 @@ fill: rgba(0, 0, 0, 0.698);
 
 .lang text {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 1.7vmin;
 }
 
 .task nav:last-child {
-    width: 8em !important;
+    width: 17vmin !important;
     display: flex;
     margin-right: 5px;
     margin-left: 0 !important;
@@ -288,11 +292,11 @@ fill: rgba(0, 0, 0, 0.698);
   justify-content: center;
   border-left: unset;
     background: unset;
-    border-radius: 7px 9px 9px 7px;
+    border-radius: inherit;
   }
 
 .task nav:last-child section {
-  width: 60%;
+  width: 7vmin;
   margin-left: 0;
   display: flex;
   align-items: center;
@@ -302,7 +306,8 @@ fill: rgba(0, 0, 0, 0.698);
 }
 
 .task nav:last-child section:first-child {
-  border-radius: 7px 0 0 7px;
+border-top-left-radius: inherit;
+border-bottom-left-radius: inherit;
   width: 50%;
   display: flex;
   align-items: center;
@@ -313,7 +318,7 @@ fill: rgba(0, 0, 0, 0.698);
 width: 5vmin;
 height: 5vmin;
 cursor: pointer;
-margin-left: 10px;
+margin-left: 1.5vmin;
 }
 
 .task nav:last-child section:first-child svg:first-child {
@@ -325,7 +330,8 @@ stroke: rgb(44, 44, 44);
   }
 
 .task nav:last-child section:last-child {
-  border-radius: 0 9px 9px 0;
+border-top-right-radius: inherit;
+border-bottom-right-radius: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,13 +343,13 @@ background: rgba(255, 255, 255, 0.624);
 
 #battery {
     box-sizing: content-box;
-    height: 1.2em;
+    height: 2.6vmin;
     width: inherit;
     background: rgba(33, 33, 33, 0.338);
     margin: auto;
     overflow: auto;
     scale: .9;
-    border-radius: 6.5px;
+    border-radius: .9vmin;
     position: absolute;
     cursor: pointer;
     right: 0;
@@ -356,22 +362,22 @@ background: rgba(255, 255, 255, 0.624);
   }
   
 .container {
-width: 2em;
+width: 4.5vmin;
 display: flex;
 align-items: center;
 position: absolute;
-height: 2.3em;
+height: 5vmin;
 text-align: center;
 }
 
 .before {
-    height: 6px;
-    width: 2.5px;
+    height: .8vmin;
+    width: .3vmin;
     background-color: rgba(33, 33, 33, 0.338);
-    right: -2px;
+    right: -.2vmin;
     position: absolute;
-    border-top-right-radius: 5em;
-    border-bottom-right-radius: 5em;
+    border-top-right-radius: 5vmin;
+    border-bottom-right-radius: 5vmin;
   }
   #charge {
     position: absolute;
@@ -392,7 +398,7 @@ text-align: center;
   
   #charge-level {
     position: absolute;
-    font-size: 12px;
+    font-size: 1.65vmin;
     font-weight: 500;
   }
   
@@ -510,34 +516,6 @@ text-align: center;
   fill: rgb(255, 255, 255) !important;
 }
 
-@media(max-width:1000px) {
-
-
-  .task nav {
-opacity: .5;
-width: 0;
-visibility: hidden;
-  }
-
-
-      .task nav:first-child {
-        margin-left: 3em !important;
-          }
-
-          
-      .task nav:first-child button{
-        margin-left: 5% !important;
-          }
-
-  .task nav:last-child {
-margin-left: 10% !important;
-  }
-
-  .stack{
-display: none;
-  }
-
-}
   ::-webkit-scrollbar {
     display: none;
   }
