@@ -1,8 +1,8 @@
 
 {
-    "name": "Routes",
-    "short_name": "Routes",
-    "description": "An app that helps users enjoy thier travel",
+    "name": "Windows 12",
+    "short_name": "Win 13",
+    "description": "Experirience Windows 12 before its time.",
     "lang": "en-US",
     "start_url": "/index.html",
     "scope": "/index.html",

@@ -5,6 +5,10 @@ align-items: center;
 justify-content: center;
 }
 
+html, body {
+  overscroll-behavior: none;
+}
+
 .modern {
 user-select: none;
 background-position: center;
@@ -27,7 +31,7 @@ border-radius: 1vmin;
 position: fixed;
 display: flex;
 align-items: center;
-bottom: 1.5vmin;
+bottom: 1vmin;
 }
 
 .task nav {
@@ -40,12 +44,20 @@ bottom: 1.5vmin;
 }
 
 .task nav:first-child .stack {
-  width: 10vmin;
-  border-radius: .7vmin;
+  width: 6vmin;
+  overflow: scroll;
+  scale: .9;
+  cursor: pointer;
+  border-radius: 1.5vmin;
   margin-left: 0;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.094);
-  height: 5vmin;
-  background: rgb(255, 255, 255);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.081);
+  height: 5.7vmin;
+  background: rgba(255, 255, 255, 0.667);
+}
+
+.stack img {
+margin-left: 7%;
+  width: 2vmin !important;
 }
 
 .task nav:first-child .search {
@@ -57,6 +69,47 @@ bottom: 1.5vmin;
   height: 5vmin;
   margin-left: 1.5vmin;
   background: white;
+}
+
+.widgets {
+  border-radius: 2.3vmin;
+  width: inherit;
+  overflow: auto;
+  bottom: 0;
+  height: 97%;
+  position: absolute;
+}
+
+.center {
+width: 37.35%;
+height: 2.5em;
+border-top-right-radius: 1vmin;
+border-top-left-radius: 1vmin;
+margin-left: 1.05vmin;
+backdrop-filter: blur(1em);
+-webkit-backdrop-filter: blur(1em);
+z-index: 9;
+position: fixed;
+display: flex;
+justify-content: center;
+}
+
+.widgets text {
+  font-size: 2em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.574);
+}
+
+.widgets div {
+width: 48%;
+border-radius: 1vmin;
+margin-left: 1.6%;
+margin-top: 1.6%;
+height: 19em;
+backdrop-filter: blur(1em);
+-webkit-backdrop-filter: blur(1em);
+background: rgba(255, 255, 255, 0.527);
+float: left;
 }
 
 .desktop {
@@ -75,12 +128,12 @@ bottom: 1.5vmin;
 }
 
 .desktop section:last-child {
-
-width: 40%;
+border-radius: 1vmin;
+width: 45%;
 }
 
 .desktop section:first-child {
-  width: 60%;
+  width: 55%;
   }
 
   .desktop section:first-child div {
@@ -514,6 +567,18 @@ text-align: center;
 .settings svg {
   width: 2em;
   fill: rgb(255, 255, 255) !important;
+}
+
+@media(max-width: 1000px) {
+  .task {
+    width: 90%
+  }
+
+  #stack {
+    width: 500vmin !important;
+    margin-left: 4vmin !important;
+    overflow: scroll;
+  }
 }
 
   ::-webkit-scrollbar {
